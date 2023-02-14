@@ -1,13 +1,98 @@
 fileFormatVersion: 2
-guid: 8a41b79d15ff1bc43ace53bca5d5fa98
+guid: 9c8c964be88c30b46b66a2c30729d89e
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: 7fcc8e61e0696f44d81659db5e9afeb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DashControls
+    second: {fileID: 2100000, guid: 85bc7e7fbc597714eb57dec94d853ac5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handles
+    second: {fileID: 2100000, guid: 34025d7b2073f3a47942d91fcf7d4946, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HeadlightGlass
+    second: {fileID: 2100000, guid: 898f8d9a0a765e649ac483a5fbd0a172, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HeadlightMetal
+    second: {fileID: 2100000, guid: 706c6528947e89249a9896426bd17019, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HoodInterior
+    second: {fileID: 2100000, guid: d2786a45e2edae649817749f0d48f36f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hull
+    second: {fileID: 2100000, guid: e0c2ed8cf4f0d7545b5be394f1b8dc23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Interior
+    second: {fileID: 2100000, guid: feeaa4bd8f4b0f24e822d18d075917e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lights
+    second: {fileID: 2100000, guid: 2344c8d4dd2a3364db7bcf0dc821dab4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 67784f2cfb5bc0c4d8e1cd185f59be44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mirrors
+    second: {fileID: 2100000, guid: 07def68e9ee2fac4fab0661ee0389da6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seating
+    second: {fileID: 2100000, guid: 14e11d1f27b8b07468aeddfdffe7dd3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SignalLights
+    second: {fileID: 2100000, guid: d890395525fde9649afad021cb38e636, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tires
+    second: {fileID: 2100000, guid: 9f5815adc77229d43959bc1efd051e03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Undermetal
+    second: {fileID: 2100000, guid: 18f7849b42966f24786af994bcbc208f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WheelMetal
+    second: {fileID: 2100000, guid: 0675aa8e541d9f3448182c76b4cc5047, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Windows
+    second: {fileID: 2100000, guid: 699047d1ff0b5984ea53428dbaa7c3a1, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 0
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -57,7 +142,7 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
-    meshOptimizationFlags: -1
+    meshOptimizationFlags: 0
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
