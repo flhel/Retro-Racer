@@ -7,8 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: AntenneaBottom
+    second: {fileID: 2100000, guid: 4ce827dc7a999e547aed4a4d0744e1b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AntenneaTop
+    second: {fileID: 2100000, guid: 1803276593ced47458111ea8d91253dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Black
     second: {fileID: 2100000, guid: 7fcc8e61e0696f44d81659db5e9afeb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BreakingLights
+    second: {fileID: 2100000, guid: 49d76c661c13d584593564c3f0e5d975, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -62,6 +77,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: RearPanels
+    second: {fileID: 2100000, guid: a86871e3ea9aa9447bd7470e98f14c07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Seating
     second: {fileID: 2100000, guid: 14e11d1f27b8b07468aeddfdffe7dd3a, type: 2}
   - first:
@@ -91,8 +111,8 @@ ModelImporter:
     second: {fileID: 2100000, guid: 699047d1ff0b5984ea53428dbaa7c3a1, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 1
-    materialSearch: 0
+    materialName: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -134,7 +154,7 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    keepQuads: 0
+    keepQuads: 1
     weldVertices: 1
     bakeAxisConversion: 0
     preserveHierarchy: 0
@@ -142,7 +162,7 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
-    meshOptimizationFlags: 0
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001

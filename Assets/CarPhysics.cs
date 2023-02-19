@@ -23,12 +23,18 @@ namespace car
         public WheelInfo[] Wheels;
 
         public float MotorPower = 100f;
-        public float SteerAngle = 35f;
+        public float SteerAngle = 25f;
 
         [Range(0, 1)]
         public float KeepGrip = 1f;
         public float GripForward = 20f;
         public float GripSideways = 5f;
+
+        //For Camera Skript
+        public float Gforce;
+        private float currentVelocity;
+        private float lastFrameVelocity;
+
 
         // Use this for initialization
         void Awake()
@@ -55,6 +61,10 @@ namespace car
 
             //Rigidbody.AddForceAtPosition(transform.up * Rigidbody.velocity.magnitude * -0.1f * Grip, transform.position + transform.rotation * CenterOfMass);
             Rigidbody.AddForceAtPosition(transform.up * Rigidbody.velocity.magnitude * GripSideways, transform.position + transform.rotation * CenterOfMass);
+
+            currentVelocity = Rigidbody.velocity.magnitude;
+            Gforce = (currentVelocity - lastFrameVelocity) / (Time.deltaTime * Physics.gravity.magnitude);
+            lastFrameVelocity = currentVelocity;
         }
 
         void OnDrawGizmos()
@@ -77,9 +87,9 @@ namespace car
                 ffriction.extremumSlip = 10f;
                 ffriction.asymptoteSlip = 20f;
                 ffriction.stiffness = GripForward;
-                sfriction.extremumValue = 1f;
+                sfriction.extremumValue = 2f;
                 sfriction.asymptoteValue = Wheels[i].WheelCollider.sidewaysFriction.extremumValue * KeepGrip * 0.998f + 0.002f;
-                sfriction.extremumSlip = 0.5f;
+                sfriction.extremumSlip = 2f;
                 sfriction.asymptoteSlip = 1f;
                 sfriction.stiffness = GripSideways;
                 Wheels[i].WheelCollider.forwardFriction = ffriction;
