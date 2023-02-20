@@ -6,7 +6,7 @@ using UnityEngine;
 public class Camera : MonoBehaviour
 {
     public float lerpTime = 3.5f;
-    [Range(2, 3.5f)] public float forwardDistance = 3;
+    [Range(2, 4)] public float forwardDistance = 3;
     private float accelerationEffect;
 
     public GameObject atachedVehicle;

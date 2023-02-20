@@ -31,6 +31,7 @@ namespace car
         public float GripSideways = 5f;
 
         //For Camera Skript
+        [HideInInspector]
         public float Gforce;
         private float currentVelocity;
         private float lastFrameVelocity;

@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &44880477
 Transform:
   m_ObjectHideFlags: 0
@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 58357332}
   - component: {fileID: 58357331}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Camera Container 3rd Person
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,14 +369,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a2becdef2e734f4d85843b3c4fafbe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpTime: 3.5
-  forwardDistance: 2.153
+  lerpTime: 3
+  forwardDistance: 3.5
   atachedVehicle: {fileID: 231964017}
   distance: 1
-  cameraPos:
-  - {x: 0, y: 0}
-  - {x: 0, y: 0}
-  - {x: 0, y: 0}
+  cameraPos: []
 --- !u!4 &58357332
 Transform:
   m_ObjectHideFlags: 0
@@ -384,15 +381,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58357330}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.06104851, y: 0, z: 0, w: 0.99813485}
+  m_LocalPosition: {x: -2.22, y: 3, z: -9.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 963194228}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 7, y: 0, z: 0}
 --- !u!1 &70602101
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +435,7 @@ WheelCollider:
     m_ExtremumValue: 2
     m_AsymptoteSlip: 1
     m_AsymptoteValue: 1
-    m_Stiffness: 3
+    m_Stiffness: 5
   m_Enabled: 1
 --- !u!4 &70602103
 Transform:
@@ -607,7 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f01126132bccca744a16c8bccb26dc52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CenterOfMass: {x: 0, y: -0.05, z: -0.7}
+  CenterOfMass: {x: 0, y: -0.4, z: -0.7}
   Wheels:
   - WheelCollider: {fileID: 1167445938}
     MeshRenderer: {fileID: 1779223774}
@@ -633,7 +630,7 @@ MonoBehaviour:
   SteerAngle: 30
   KeepGrip: 0.5
   GripForward: 15
-  GripSideways: 3
+  GripSideways: 5
   Gforce: 0
 --- !u!114 &231964025
 MonoBehaviour:
@@ -1532,7 +1529,7 @@ WheelCollider:
     m_ExtremumValue: 2
     m_AsymptoteSlip: 1
     m_AsymptoteValue: 1
-    m_Stiffness: 3
+    m_Stiffness: 5
   m_Enabled: 1
 --- !u!4 &913195262
 Transform:
@@ -1628,14 +1625,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.06104851, y: -0, z: -0, w: 0.99813485}
-  m_LocalPosition: {x: -2.22, y: 2.63, z: -9.24}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 58357332}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 7, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1931,7 +1928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1139156086
 Transform:
   m_ObjectHideFlags: 0
@@ -2176,7 +2173,7 @@ WheelCollider:
     m_ExtremumValue: 2
     m_AsymptoteSlip: 1
     m_AsymptoteValue: 1
-    m_Stiffness: 3
+    m_Stiffness: 5
   m_Enabled: 1
 --- !u!4 &1167445939
 Transform:
@@ -2239,7 +2236,7 @@ WheelCollider:
     m_ExtremumValue: 2
     m_AsymptoteSlip: 1
     m_AsymptoteValue: 1
-    m_Stiffness: 3
+    m_Stiffness: 5
   m_Enabled: 1
 --- !u!4 &1291756349
 Transform:
@@ -2778,7 +2775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1969769543}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: focus transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

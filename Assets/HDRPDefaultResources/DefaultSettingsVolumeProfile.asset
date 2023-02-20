@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf384b154398e341b6b29969c078198, type: 3}
   m_Name: MotionBlur
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   quality:
     m_OverrideState: 1
     m_Value: 2
   intensity:
     m_OverrideState: 1
-    m_Value: 5
+    m_Value: 20
   maximumVelocity:
     m_OverrideState: 0
-    m_Value: 200
+    m_Value: 500
   minimumVelocity:
     m_OverrideState: 0
-    m_Value: 2
+    m_Value: 10
   cameraMotionBlur:
     m_OverrideState: 0
     m_Value: 1
@@ -60,8 +60,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   quality:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 2
   enable:
     m_OverrideState: 1
     m_Value: 1
@@ -93,8 +93,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0.15
   m_SampleCount:
-    m_OverrideState: 0
-    m_Value: 10
+    m_OverrideState: 1
+    m_Value: 32
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f077503be6ae942a1e1245dbd53ea9, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   quality:
     m_OverrideState: 1
     m_Value: 1
@@ -599,7 +599,7 @@ MonoBehaviour:
   active: 1
   maxShadowDistance:
     m_OverrideState: 1
-    m_Value: 150
+    m_Value: 250
   directionalTransmissionMultiplier:
     m_OverrideState: 0
     m_Value: 1
