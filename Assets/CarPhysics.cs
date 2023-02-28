@@ -52,6 +52,7 @@ namespace car
                 if (Wheels[i].Motor)
                     // 4 is the factor of torque conversion via the gearbox etc. so the wheel power is "correct"
                     Wheels[i].WheelCollider.motorTorque = Input.Forward * MotorPower * 4;
+
                 if (Wheels[i].Steer)
                     Wheels[i].WheelCollider.steerAngle = Input.Steer * SteerAngle;
 

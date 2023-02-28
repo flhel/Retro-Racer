@@ -12,3 +12,5 @@
 !/Assets/
 !/Packages/
 !LICENSES.txt
+Assets/nightsky.hdr
+Assets/nightsky.hdr.meta

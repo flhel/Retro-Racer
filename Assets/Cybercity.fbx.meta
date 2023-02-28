@@ -3,7 +3,37 @@ guid: 51c371da2de657c4eba01036af56f8b3
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Holo Streetsign
+    second: {fileID: 2100000, guid: 7d363b702253f88428adc3a9a74386e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 608ce6c8004c9534e80f87c2a8550161, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Street
+    second: {fileID: 2100000, guid: c67752180b6e1f74694761187f83f786, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Streetlight.001
+    second: {fileID: 2100000, guid: 16eb324c21047cf42ad588708a679388, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wet Concrete
+    second: {fileID: 2100000, guid: a9fac132436a04142a199c792b613714, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wet Concrete 2
+    second: {fileID: 2100000, guid: 0ae64efe578360a469201f7fcbda5657, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

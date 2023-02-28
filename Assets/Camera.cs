@@ -23,10 +23,11 @@ public class Camera : MonoBehaviour
     public Vector2[] cameraPos;
     void Start()
     {
+        //x is the distance behind the car and y is the hight
         cameraPos = new Vector2[4];
-        cameraPos[0] = new Vector2(2, 0);
-        cameraPos[1] = new Vector2(7.5f, 0.5f);
-        cameraPos[2] = new Vector2(8.9f, 1.2f);
+        cameraPos[0] = new Vector2(2, 0.5f);
+        cameraPos[1] = new Vector2(7.5f, 0.8f);
+        cameraPos[2] = new Vector2(8.9f, 1.7f);
 
         focusPoint = atachedVehicle.transform.Find("focus").gameObject;
         //firstFocusPos = focusPoint.transform.localPosition;
