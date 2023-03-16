@@ -38,8 +38,6 @@ namespace car
             }
 
             lastFrameSteer = carPhysics.Input.Steer;
-
-            Debug.Log(carPhysics.Input.Steer);
         }
     }
 
