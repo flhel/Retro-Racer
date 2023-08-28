@@ -2,18 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuControl : MonoBehaviour, IDataPersistence
 {
 
+    //Menus
     public GameObject MainMenu;
     public GameObject OptionsMenu;
     public GameObject LevelMenu;
 
+    //Buttons
+    public GameObject DriveButtonObject;
+    private Button DriveButton;
 
     public void Start()
     {
         QuitToMainMenu();
+        DriveButton = DriveButtonObject.GetComponent<Button>();
+        DriveButton.interactable = false;
     }
 
     public void QuitToMainMenu()
@@ -50,7 +57,7 @@ public class MenuControl : MonoBehaviour, IDataPersistence
 
     // LevelMenu
 
-    private string LevelName = "CybercityHighway";
+    private string LevelName = null;
 
     public void SetGamemodeTimeattack()
     {
@@ -60,6 +67,19 @@ public class MenuControl : MonoBehaviour, IDataPersistence
     public void SetGamemodeCruise()
     {
 
+    }
+
+    public void SetLevel1()
+    {
+        LevelName = "CybercityHighway";
+        DriveButton.interactable = true;
+    }
+
+
+    public void SetLevel2()
+    {
+        LevelName = "CaliforniaHighway";
+        DriveButton.interactable = true;
     }
 
     public void Drive()
