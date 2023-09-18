@@ -7,6 +7,11 @@ public class Finishline : MonoBehaviour
 {
     public GameObject FinishMenu;
 
+    void Start()
+    {
+        FinishMenu.SetActive(false);
+    }
+
     // Checks if the Car has crossed the finishline
     void OnTriggerEnter()
     {
